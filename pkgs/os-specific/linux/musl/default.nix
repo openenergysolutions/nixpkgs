@@ -83,6 +83,7 @@ stdenv.mkDerivation rec {
   outputs = [ "out" "dev" ];
 
   dontDisableStatic = true;
+  dontPatchShebangs = true;
   separateDebugInfo = true;
 
   NIX_DONT_SET_RPATH = true;
