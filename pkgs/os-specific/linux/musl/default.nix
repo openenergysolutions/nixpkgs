@@ -93,6 +93,7 @@ stdenv.mkDerivation rec {
 
   dontDisableStatic = true;
   dontAddStaticConfigureFlags = true;
+  dontPatchShebangs = true;
   separateDebugInfo = true;
 
   NIX_DONT_SET_RPATH = true;
